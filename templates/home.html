@@ -1,0 +1,27 @@
+{%extends "layout.html"%}
+
+{%block content%}
+
+<div class="container-fluid bg-dark text-center text-white py-5">
+    <h3>Icon Converter</h3>
+</div>
+
+<div class="container py-3 my-5">
+    <div class="alert alert-warning" role="alert">
+        <h6>Rules</h6>
+        <h6>Only work with .png file  👍</h6>
+        <h6>Make sure your file should be plain (i.e myimage.png) </h6>
+        <h6>file name should not content any name with number (i.e myimage (1).png)</h6>
+    </div>
+</div>
+
+<div class="container">
+    <div class="text-center">
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="photo" id="">
+        <button type="submit" class="btn btn-primary">Download</button>
+        </form>
+    </div>
+</div>
+
+{%endblock%}
